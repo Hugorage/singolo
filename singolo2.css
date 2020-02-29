@@ -31,9 +31,11 @@ body {
   margin: 0 auto;
   padding: 0 40px;
 }
-.section{
+
+.section {
   padding: 45px 0;
 }
+
 .portfolio {
   height: 870px;
   background-color: #2d303a;
@@ -110,18 +112,76 @@ body {
   margin: 10px 0;
   cursor: pointer;
 }
-.gallery__item:hover{
+
+.gallery__item:hover {
   opacity: 0.5;
 }
-.about-us{
+
+.about-us {
   height: 728px;
+  background-color: #f2f2f2;
+  color: #666d89;
+  border-bottom: 6px solid #ffffff;
 }
-.about-us__title{
+
+.about-us__title {
   letter-spacing: 0.25px;
 }
-.about-us__description{
-  margin-top: 17px;
-letter-spacing: -0.169px;
-    line-height: 30px;
 
+.about-us__description {
+  margin: 17px 0 45px 0;
+  letter-spacing: -0.169px;
+  line-height: 30px;
+}
+
+.layout-3-column {
+  display: flex;
+  justify-content: space-between;
+}
+
+.employee {
+  display: flex;
+  overflow: hidden;
+  justify-content: space-between;
+  flex-direction: column;
+  flex: 1 1 30%
+}
+
+.employee:not(:last-child) {
+  margin-right: 19px;
+}
+
+.employee:nth-of-type(2n) {
+  margin-right: 21px;
+}
+
+.employee img {
+  cursor: pointer;
+}
+
+.employee img:hover {
+  opacity: 0.5;
+}
+
+.employee__title {
+  white-space: nowrap;
+  margin-top: 15px;
+  letter-spacing: -0.3px;
+}
+
+.employee__description {
+  margin: 8px 0;
+  font-size: 12px;
+  letter-spacing: -0.15px;
+  line-height: 21px;
+}
+
+.employee__social {
+  display: flex;
+  margin: 15.5px 0;
+}
+
+.social__icon {
+  cursor: pointer;
+  margin-right: 8px;
 }
